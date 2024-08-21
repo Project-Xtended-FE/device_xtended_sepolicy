@@ -47,5 +47,5 @@ allow platform_app sysfs_zram:file r_file_perms;
 # Allow Columbus to set ApSensor property
 allow platform_app system_prop:property_service set;
 
-# Bootanim
+# Boot animation
 allow platform_app bootanim_system_prop:property_service set;

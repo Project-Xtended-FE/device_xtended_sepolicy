@@ -4,6 +4,11 @@ get_prop(system_app, legal_url_prop)
 # Allow Settings/LineageParts to read custom version
 get_prop(system_app, custom_version_prop)
 
+# Bootanim
+allow system_app bootanim_data_file:dir create_dir_perms;
+allow system_app bootanim_data_file:file create_file_perms;
+set_prop(system_app, bootanim_system_prop)
+
 # Allow Settings to read ro.vendor.build.security_patch
 get_prop(system_app, vendor_security_patch_level_prop)
 
