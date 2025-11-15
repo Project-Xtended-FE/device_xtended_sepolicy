@@ -21,3 +21,5 @@ get_prop(system_app, qemu_hw_prop)
 # Allow Columbus to set ApSensor property
 allow system_app system_prop:property_service set;
 
+allow system_app proc_vendor_sched:dir rw_dir_perms;
+allow system_app proc_vendor_sched:file rw_file_perms;
